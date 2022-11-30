@@ -32,3 +32,112 @@ header .header__container > button {
 header .header__container > button:hover {
     text-decoration: underline;
 }
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main .main__container {
+    margin: 1.5rem auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section--form-and-users {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 50%;
+    width: 100%;
+}
+
+.main__section--form-and-users .form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.main__section--form-and-users .form__container .form__user {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main__section--form-and-users .form__container .form__user .form__user--name > h2 {
+    font-size: 1.25rem;
+    color: (--brand-color-1);
+}
+
+.main__section--form-and-users .form__container .form__user .form__user--name > p {
+    font-size: 0.875rem;
+    color: (--grey-color-2);
+}
+
+.main__section--form-and-users .form__container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 44.563rem;
+    max-width: 90%;
+}
+
+.main__section--form-and-users .form__container > form > input {
+    box-sizing: border-box;
+    border-radius: var(--border-radius-default);
+    border: 2px solid var(--grey-color-4);
+    font-size: 1rem;
+    color: var(--grey-opacity-1);
+    padding: 1rem 1.25rem;
+    width: 44.563rem;
+    height: 3.25rem;
+    max-width: 100%;
+}
+
+.main__section--form-and-users .form__container > form > input:focus {
+    border: 2px solid var(--brand-color-1);
+    outline: none;
+    color: var(--grey-color-2);
+}
+
+.main__section--form-and-users .form__container > form > textarea {
+    box-sizing: border-box;
+    border-radius: var(--border-radius-default);
+    border: 2px solid var(--grey-color-4);
+    font-size: 1rem;
+    color: var(--grey-opacity-1);
+    padding: 1rem 1.25rem;
+    width: 44.563rem;
+    height: 8.125rem;
+    max-width: 100%;
+}
+
+.main__section--form-and-users .form__container > form > textarea:focus {
+    border: 2px solid var(--brand-color-1);
+    outline: none;
+    color: var(--grey-color-2);
+}
+
+.main__section--form-and-users .form__container > form > button {
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 4.313rem;
+    height: 2.375rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    background-color: var(--brand-color-1);
+    border: 2px solid var(--brand-color-1);
+    border-radius: var(--border-radius-default);
+    color: var(--white-fixed);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.main__section--form-and-users .form__container > form > button:hover {
+    background-color: var(--brand-color-2);
+}

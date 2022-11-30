@@ -1,0 +1,34 @@
+header {
+    height: 4.75rem;
+    width: 100vw;
+    background-color: var(--grey-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header__container {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header__container > h1 {
+    font-size: 1.25rem;
+    color: var(--white-fixed);
+}
+
+header .header__container > button {
+    background-color: transparent;
+    border: none;
+    color: var(--white-fixed);
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+header .header__container > button:hover {
+    text-decoration: underline;
+}

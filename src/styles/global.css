@@ -1,0 +1,31 @@
+:root {
+    --brand-color-1: #4263EB;
+    --brand-color-2: #364FC7;
+    --grey-color-0: #0A0C0D;
+    --grey-color-1: #212529;
+    --grey-color-2: #495057;
+    --grey-color-3: #868E96;
+    --grey-color-4: #DEE2E6;
+    --grey-color-5: #F8F9FA;
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+    --white-fixed: #fff;
+    --line-height-default: 150%;
+    --border-radius-default: 4px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h1, h2, p {
+    line-height: var(--line-height-default);
+}
+
+img {
+   width: 3.25rem;
+   height: 3.25rem; 
+}

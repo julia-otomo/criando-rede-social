@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPosters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/media.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="header__container">
+            <h1>TechPosters</h1>
+            <button>Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <section class="main__section main__section--form-and-users">
+                <div class="form__container">
+                    <div class="form__user">
+                        <img src="./src/assets/img/user3.svg" alt="">
+                        <div class="form__user--name">
+                            <h2>Samuel Leão</h2>
+                            <p>Front end Engineer</p>
+                        </div>
+                        <form action="">
+                            <input type="text" placeholder="Título do Post">
+                            <textarea name="text" id="text" cols="30" rows="10" placeholder="Texto do Post"></textarea>
+                            <button type="submit" class="post-button">Postar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="users__container">
+                    <h2>Sugestões para você seguir</h2>
+                    <ul id="users-list">
+                        <li>
+                            <img src="./src/assets/img/user4.svg" alt="">
+                            <div class="users__name">
+                                <h2>Carla Maria</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="follow-button">Seguir</button>
+                        </li>
+
+                        <li>
+                            <img src="./src/assets/img/user4.svg" alt="">
+                            <div class="users__name">
+                                <h2>Carla Maria</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="follow-button">Seguir</button>
+                        </li>
+
+                        <li>
+                            <img src="./src/assets/img/user4.svg" alt="">
+                            <div class="users__name">
+                                <h2>Carla Maria</h2>
+                                <p>UX e UI Designer</p>
+                            </div>
+                            <button class="follow-button">Seguir</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="posts__container">
+                <h2>Posts</h2>
+                <ul id="posts-list">
+                    <li>
+                        <div class="posts__users">
+                            <img src="./src/assets/img/user2.svg" alt="">
+                            <div class="posts__users--name">
+                                <h2>Samuel Persuhn</h2>
+                                <p>Front end Engineer</p>
+                            </div>
+                        </div>
+                        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                        <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</p>
+                        <div class="posts__buttons">
+                            <button dataset-modal-control="modal-wrapper">Abrir Post</button>
+                            <div class="heart-button">
+                                <button><img src="./src/assets/img/heart_grey.svg" alt=""></button>
+                                <span>10</span>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="posts__users">
+                            <img src="./src/assets/img/user2.svg" alt="">
+                            <div class="posts__users--name">
+                                <h2>Samuel Persuhn</h2>
+                                <p>Front end Engineer</p>
+                            </div>
+                        </div>
+                        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                        <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</p>
+                        <div class="posts__buttons">
+                            <button dataset-modal-control="modal-wrapper">Abrir Post</button>
+                            <div class="heart-button">
+                                <button><img src="./src/assets/img/heart_grey.svg" alt=""></button>
+                                <span>10</span>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="posts__users">
+                            <img src="./src/assets/img/user2.svg" alt="">
+                            <div class="posts__users--name">
+                                <h2>Samuel Persuhn</h2>
+                                <p>Front end Engineer</p>
+                            </div>
+                        </div>
+                        <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                        <p>A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</p>
+                        <div class="posts__buttons">
+                            <button dataset-modal-control="modal-wrapper">Abrir Post</button>
+                            <div class="heart-button">
+                                <button><img src="./src/assets/img/heart_grey.svg" alt=""></button>
+                                <span>10</span>
+                            </div>
+                            
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="./src/scripts/users.js"></script>
+    <script src="./src/scripts/sugestUsers.js"></script>
+    <script src="./src/scripts/posts.js"></script>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>

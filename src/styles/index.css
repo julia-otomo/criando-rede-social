@@ -41,11 +41,9 @@ main {
 main .main__container {
     margin: 1.5rem auto;
     width: 90%;
-    height: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10rem;
+    gap: 2.5rem;
 }
 
 
@@ -145,14 +143,10 @@ main .main__container {
 }
 
 .main__section--form-and-users .users__container {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    width: 26.313rem;
+    gap: 3.5rem;
     max-width: 90%;
-    min-height: 22.688rem;
-    height: 22.688rem;
 }
 
 .main__section--form-and-users .users__container > h2 {
@@ -164,15 +158,172 @@ main .main__container {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 2rem;
+    gap: 2.5rem;
     width: 100%;
 }
 
 .main__section--form-and-users .users__container > ul li {
-    border: 1px solid black;
-    min-width: 13rem;
-    
+    min-width: 14.5rem;
+    width: 14.5rem;
+    height: 11.375;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__section--form-and-users .users__container > ul li .users__items {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
     align-items: center;
+}
+
+.main__section--form-and-users .users__container > ul li .users__items .users__name > h2 {
+    font-size: 1.25rem;
+    color: var(--grey-color-1);
+}
+
+.main__section--form-and-users .users__container > ul li .users__items .users__name > p {
+    font-size: 0.875rem;
+    color: var(--grey-color-2);
+}
+
+.main__section--form-and-users .users__container > ul li button {
+    padding: 0 0.75rem;
+    width: 4.25rem;
+    height: 1.75rem;
+    background: transparent;
+    border: 1px solid var(--grey-color-1);
+    border-radius: 2px;
+    color: var(--grey-color-1);
+    font-size: 0.8757rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main__section--form-and-users .users__container > ul li .change-follow-button {
+    width: 5.563rem;
+}
+
+.main__section--form-and-users .users__container > ul li button:hover {
+    background-color: #EDF2FF;
+    border: 1px solid var(--brand-color-1);
+    color: var(--brand-color-1);
+}
+
+.main__section--form-and-users .users__container > ul li button:focus {
+    background-color: var(--brand-color-1);
+    color: var(--white-fixed);
+}
+
+.posts__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.posts__container > h2 {
+    font-size: 1.75rem;
+    color: var(--grey-color-1);
+}
+
+.posts__container > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    max-width: 44.563rem;
+    width: 90%;
+}
+
+.posts__container > ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.posts__container > ul li .posts__users {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.posts__container > ul li .posts__users .posts__users--name h2 {
+    font-size: 1.25rem;
+    color: var(--grey-color-1);
+}
+
+.posts__container > ul li .posts__users .posts__users--name p {
+    font-size: 0.875rem;
+    color: var(--grey-color-2);
+}
+
+.posts__container > ul li > h2 {
+    font-size: 1.75rem;
+    color: var(--grey-color-1);
+}
+
+.posts__container > ul li > p {
+    font-size: 1rem;
+    color: var(--grey-color-2);
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.posts__container > ul li .posts__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.posts__container > ul li .posts__buttons > button {
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    width: 5.75rem;
+    height: 2.375rem;
+    border-radius: var(--border-radius-default);
+    background-color: var(--grey-color-1);
+    border: 2px solid var(--grey-color-1);
+    color: var(--white-fixed);
+    cursor: pointer;
+}
+
+.posts__container > ul li .posts__buttons > button:hover {
+    background-color: var(--grey-color-0);
+}
+
+.posts__container > ul li .posts__buttons .heart-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.438rem;
+    width: 40%;
+    height: 100%;
+}
+
+.posts__container > ul li .posts__buttons .heart-button > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1.423rem;
+    height: 1.25rem;
+}
+
+.posts__container > ul li .posts__buttons .heart-button > button img {
+    width: 1.423rem;
+    height: 1.25rem;
+}
+
+.posts__container > ul li .posts__buttons .heart-button > span {
+    font-size: 0.875rem;
+    color: var(--grey-color-2);
 }

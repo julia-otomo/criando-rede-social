@@ -364,6 +364,7 @@ main .main__container {
     color: var(--grey-color-3);
     background-color: transparent;
     text-align: center;
+    cursor: pointer;
 }
 
 .modal_container .modal .modal__button:focus {

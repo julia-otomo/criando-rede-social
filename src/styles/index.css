@@ -224,6 +224,7 @@ main .main__container {
     display: flex;
     flex-direction: column;
     gap: 3.125rem;
+    margin-bottom: 2rem;
 }
 
 .posts__container > h2 {

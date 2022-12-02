@@ -1,0 +1,16 @@
+@media (min-width: 769px) {
+    .main__section--form-and-users {
+        flex-direction: row;
+        gap: 7.938rem;
+    }
+
+    .main__section--form-and-users .users__container > ul {
+        flex-direction: column;
+    }
+
+    .main__section--form-and-users .users__container > ul li {
+        flex-direction: row;
+        background-color: aqua;
+
+    }
+}

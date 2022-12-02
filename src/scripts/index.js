@@ -134,7 +134,64 @@ function renderPosts (arr) {
         postsList.appendChild(li);
     }
 } 
+
+function renderModal () {
+    const modalContainer = document.querySelector('.modal_container');
+    let buttons = document.querySelectorAll('[data-show-modal]');
+
+    for (let i = 0; i < buttons.length; i++) {
+        let button = buttons[i];
+        
+        button.addEventListener('click', () => {
+            let modal = createModal (button.dataset.showModal);
+
+            modalContainer.innerHTML = '';
+
+            modalContainer.appendChild(modal);
+
+            modalContainer.showModal();
+
+            closeModal();
+        })
+    }
+}
+
+function createModal (id) {
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    let closeButton = document.createElement('button');
+    closeButton.classList.add('modal__button');
+    closeButton.innerText = 'X';
+
+    let title = document.createElement('h2');
+
+    let text = document.createElement('p');
+
+    for (let i = 0; i < posts.length; i++) {
+        if (posts[i].id_post === Number(id)) {
+            let users = createUserById(posts[i].user);
+
+            title.innerText = posts[i].title;
+
+            text.innerText = posts[i].text;
+
+            modal.append(closeButton, users, title, text);
+        }
+    }
+    return modal;
+}
+
+function closeModal () {
+    let modalContainer = document.querySelector('.modal_container');
+    let closeButton = document.querySelector('.modal__button');
+
+    closeButton.addEventListener('click', () => {
+        modalContainer.close();
+    })
+}
     
 renderUsersSugestions ()
 followSystem ()
 renderPosts (posts);
+renderModal ()

@@ -1,16 +1,50 @@
 @media (min-width: 769px) {
+
+    main .main__container {
+        align-items: center;
+    }
+    
+
     .main__section--form-and-users {
         flex-direction: row;
-        gap: 7.938rem;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .main__section--form-and-users .form__container {
+        width: 50%;
+    }
+
+    .main__section--form-and-users .users__container {
+        width: 40%;
     }
 
     .main__section--form-and-users .users__container > ul {
         flex-direction: column;
+        width: 80%;
+        gap: 4rem;
+        max-width: 90%;
     }
 
     .main__section--form-and-users .users__container > ul li {
         flex-direction: row;
-        background-color: aqua;
+        width: 100%;
+        gap: 2rem;
+    }
 
+    .main__section--form-and-users .users__container > ul li .users__items {
+        width: 80%;
+    }
+
+    .posts__container {
+        width: 90%;
+    }
+
+    .modal_container .modal {
+        padding: 2.5rem 2rem;
+    }
+
+    .modal_container .modal .modal__button {
+        left: 93%;
     }
 }

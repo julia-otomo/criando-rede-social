@@ -207,6 +207,13 @@ main .main__container {
 
 .main__section--form-and-users .users__container > ul li .change-follow-button {
     width: 5.563rem;
+    background-color: var(--brand-color-1);
+    color: var(--white-fixed);
+}
+
+.main__section--form-and-users .users__container > ul li .change-follow-button:hover {
+    background-color: var(--brand-color-1);
+    color: var(--white-fixed);
 }
 
 .main__section--form-and-users .users__container > ul li button:hover {
@@ -215,10 +222,6 @@ main .main__container {
     color: var(--brand-color-1);
 }
 
-.main__section--form-and-users .users__container > ul li button:focus {
-    background-color: var(--brand-color-1);
-    color: var(--white-fixed);
-}
 
 .posts__container {
     display: flex;
@@ -367,7 +370,7 @@ main .main__container {
     cursor: pointer;
 }
 
-.modal_container .modal .modal__button:focus {
+.modal_container .modal .modal__button:hover {
     background-color: var(--grey-color-5);
 }
 
@@ -402,3 +405,4 @@ main .main__container {
 .modal_container::backdrop {
     background-color: rgba(33, 37, 41, 0.5);;
 }
+

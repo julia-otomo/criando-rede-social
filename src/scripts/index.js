@@ -49,14 +49,17 @@ function renderUsersSugestions () {
 
 function followSystem () {
     let buttons = document.querySelectorAll('.follow-button');
-    let boolean = true;
 
     for (let button = 0; button < buttons.length; button++) {
         let followButton = buttons[button];
 
         followButton.addEventListener('click', () => {
-            followButton.classList.add('change-follow-button');
-            followButton.innerHTML = 'Seguindo';
+            followButton.classList.toggle('change-follow-button');
+             if (followButton.classList.contains('change-follow-button')) {
+                followButton.innerText = 'Seguindo'
+            } else {
+                followButton.innerText = 'Seguir'
+            }
         })
     } 
 }

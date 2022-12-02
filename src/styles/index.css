@@ -5,6 +5,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .header__container {
@@ -36,6 +39,7 @@ header .header__container > button:hover {
 main {
     width: 100vw;
     height: 100vh;
+    margin-top: 7rem;
 }
 
 main .main__container {

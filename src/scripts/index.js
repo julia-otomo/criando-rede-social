@@ -120,6 +120,7 @@ function renderPosts (arr) {
 
         let heartButton = document.createElement('button');
         heartButton.classList.add('heart-grey');
+        heartButton.id = `h_${arr[i].id_post}`;
 
         let buttonImg = document.createElement('img');
         buttonImg.src = "./src/assets/img/heart_grey.svg";
@@ -127,6 +128,7 @@ function renderPosts (arr) {
         heartButton.append(buttonImg);
 
         let span = document.createElement('span');
+        span.id = `s_${arr[i].id_post}`
         span.innerText = 0;
 
         heartButtonDiv.append(heartButton, span);
@@ -198,3 +200,4 @@ renderUsersSugestions ()
 followSystem ()
 renderPosts (posts);
 renderModal ()
+likeButton ()

@@ -8,6 +8,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 header .header__container {
@@ -55,8 +56,9 @@ main .main__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 50%;
+    height: 60%;
     width: 100%;
+    position: relative;
 }
 
 .main__section--form-and-users .form__container {
@@ -117,7 +119,7 @@ main .main__container {
     color: var(--grey-opacity-1);
     padding: 1rem 1.25rem;
     width: 44.563rem;
-    height: 8.125rem;
+    height: 13rem;
     max-width: 100%;
 }
 
@@ -149,7 +151,7 @@ main .main__container {
 .main__section--form-and-users .users__container {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 2rem;
     max-width: 90%;
 }
 
@@ -162,7 +164,7 @@ main .main__container {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 2.5rem;
+    gap: 1.7rem;
     width: 100%;
 }
 

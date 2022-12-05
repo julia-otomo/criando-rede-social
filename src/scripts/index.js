@@ -240,7 +240,6 @@ function newPost () {
         }
 
         posts.push(objPost);
-        console.log(posts);
     })
     return posts;
 }

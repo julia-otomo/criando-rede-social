@@ -326,16 +326,23 @@ main .main__container {
     cursor: pointer;
     width: 1.423rem;
     height: 1.25rem;
+    background-image: url(../assets/img/heart_grey.svg);
+    transition: .1s;
 }
 
-.posts__container > ul li .posts__buttons .heart-button > button img {
+.posts__container > ul li .posts__buttons .heart-button .heart-button-red {
+    background-image: url(../assets/img/heart_red.svg);
+}
+
+/* .posts__container > ul li .posts__buttons .heart-button > button img {
     width: 1.423rem;
     height: 1.25rem;
-}
+} */
 
 .posts__container > ul li .posts__buttons .heart-button > span {
     font-size: 0.875rem;
     color: var(--grey-color-2);
+    display: none;
 }
 
 .modal_container {

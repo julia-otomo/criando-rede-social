@@ -122,10 +122,10 @@ function renderPosts (arr) {
         heartButton.classList.add('heart-grey');
         heartButton.id = `h_${arr[i].id_post}`;
 
-        let buttonImg = document.createElement('img');
-        buttonImg.src = "./src/assets/img/heart_grey.svg";
+        // let buttonImg = document.createElement('img');
+        // buttonImg.src = "./src/assets/img/heart_grey.svg";
 
-        heartButton.append(buttonImg);
+        // heartButton.append(buttonImg);
 
         let span = document.createElement('span');
         span.id = `s_${arr[i].id_post}`
@@ -195,9 +195,34 @@ function closeModal () {
         modalContainer.close();
     })
 }
+
+function likeFuncionality () {
+    let buttons = document.querySelectorAll('.heart-grey');
+
+    for (let i = 0; i < buttons.length; i++) {
+        let button = buttons[i];
+        
+        button.addEventListener('click', () => {
+            let buttonId = button.id.substring(2);
+            let span = document.querySelector(`#s_${buttonId}`);
+            
+            button.classList.toggle('heart-button-red');
+
+            if (button.classList.contains('heart-button-red')) {
+                span.style.display = 'inline-block';
+
+                span.innerText = 1;
+            } else {
+                span.style.display = 'none';
+                span.innerText = 0;
+            }
+        })
+    }
+
+}
     
 renderUsersSugestions ()
 followSystem ()
 renderPosts (posts);
 renderModal ()
-likeButton ()
+likeFuncionality ()

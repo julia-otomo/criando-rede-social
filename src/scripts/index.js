@@ -218,11 +218,36 @@ function likeFuncionality () {
             }
         })
     }
+}
 
+function newPost () {
+    let button = document.querySelector('.post-button');
+    let input = document.querySelector('input');
+    let textarea = document.querySelector('textarea');
+
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let count = 3;
+
+        count++
+
+        let objPost = {
+        id_post: count,
+        user: 1,
+        title: input.value,
+        text: textarea.value
+        }
+
+        posts.push(objPost);
+        console.log(posts);
+    })
+    return posts;
 }
     
 renderUsersSugestions ()
 followSystem ()
+newPost ();
 renderPosts (posts);
 renderModal ()
 likeFuncionality ()

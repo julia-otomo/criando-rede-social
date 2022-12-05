@@ -5,43 +5,34 @@
     }
 
     main .main__container {
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 85%;
+        justify-content: space-between;
     }
     
-
-    .main__section--form-and-users {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-    }
-
-    .main__section--form-and-users .form__container {
-        width: 50%;
-    }
-
-    .main__section--form-and-users .users__container {
+    .users__container {
         width: 40%;
         gap: 2rem;
-        height: 80%;
         position: sticky;
         right: 0;
-        top: 0;
+        top: 80px;
     }
 
-    .main__section--form-and-users .users__container > ul {
+    .users__container > ul {
         flex-direction: column;
         width: 80%;
         gap: 1.7rem;
         max-width: 90%;
     }
 
-    .main__section--form-and-users .users__container > ul li {
+    .users__container > ul li {
         flex-direction: row;
         width: 100%;
         gap: 2rem;
     }
 
-    .main__section--form-and-users .users__container > ul li .users__items {
+    .users__container > ul li .users__items {
         width: 80%;
     }
 

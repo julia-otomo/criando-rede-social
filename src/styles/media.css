@@ -7,7 +7,7 @@
     main .main__container {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 85%;
+        max-width: 95%;
         justify-content: space-between;
     }
     

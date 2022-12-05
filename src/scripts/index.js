@@ -122,11 +122,6 @@ function renderPosts (arr) {
         heartButton.classList.add('heart-grey');
         heartButton.id = `h_${arr[i].id_post}`;
 
-        // let buttonImg = document.createElement('img');
-        // buttonImg.src = "./src/assets/img/heart_grey.svg";
-
-        // heartButton.append(buttonImg);
-
         let span = document.createElement('span');
         span.id = `s_${arr[i].id_post}`
         span.innerText = 0;
@@ -224,6 +219,7 @@ function newPost () {
     let button = document.querySelector('.post-button');
     let input = document.querySelector('input');
     let textarea = document.querySelector('textarea');
+    let ulPosts = document.querySelector('#posts-list');
 
     button.addEventListener('click', (e) => {
         e.preventDefault();
@@ -239,9 +235,18 @@ function newPost () {
         text: textarea.value
         }
 
-        posts.push(objPost);
+        if (input.value === '' || textarea.value === '') {
+            return alert('Algum dos campos está vazio, por favor verifique.');
+        } else {
+          posts.push(objPost);
+            ulPosts.innerHTML = '';
+            renderPosts(posts);
+            renderModal ();
+            likeFuncionality (); 
+            input.value = '';
+            textarea.value = '';
+        } 
     })
-    return posts;
 }
     
 renderUsersSugestions ()
